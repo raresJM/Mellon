@@ -4,11 +4,13 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Mellon
 {
     [TestClass]
-    public class Mellon
+    public class TestMellon
     {
         [TestMethod]
-        public void TestMethod1()
+        public void TestIfEven_OnEvenNumber()
         {
+            Assert.AreEqual(0,CheckIfEven(2));
         }
+
     }
 }
