@@ -21,5 +21,23 @@ namespace Mellon
             return result;
         }
 
+
+        [TestMethod]
+        public void TestIfMellonCanBeSplitted_GoodScenario()
+        {
+            Assert.IsTrue(CheckIfCanBeSplitted(8));
+        }
+        [TestMethod]
+        public void TestIfMellonCanBeSplitted_BadScenario_01()
+        {
+            Assert.IsTrue(CheckIfCanBeSplitted(10));
+        }
+        [TestMethod]
+        public void TestIfMellonCanBeSplitted_BadScenario_02()
+        {
+            Assert.IsTrue(CheckIfCanBeSplitted(9));
+        }
+
+
     }
 }
