@@ -30,14 +30,27 @@ namespace Mellon
         [TestMethod]
         public void TestIfMellonCanBeSplitted_BadScenario_01()
         {
-            Assert.IsTrue(CheckIfCanBeSplitted(10));
+            Assert.IsFalse(CheckIfCanBeSplitted(10));
         }
         [TestMethod]
         public void TestIfMellonCanBeSplitted_BadScenario_02()
         {
-            Assert.IsTrue(CheckIfCanBeSplitted(9));
+            Assert.IsFalse(CheckIfCanBeSplitted(9));
         }
-
+        //The mellon can be splitted in two even number of kilos if 
+        //kilos is an even number and also kilos/2 is an even number!
+        public bool CheckIfCanBeSplitted(int kilos)
+        {
+            bool result = false;
+            if (CheckIfEven(kilos)) 
+            {
+                if (CheckIfEven(kilos / 2)) 
+                {
+                    result = true;
+                }
+            }
+            return result;
+        }
 
     }
 }
