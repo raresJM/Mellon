@@ -1,0 +1,9 @@
+Pepenele
+
+Doi prieteni au cumparat un pepene de X kg, ?i doresc sa îl împarta.
+Singura lor dorin?a e ca fiecare sa primeasca un numar par de kg din pepene.
+
+E ok ?i daca nu primesc aceea?i cantitate.
+Scrie un program care raspunde cu DA daca pepenele 
+poate fi împar?it cum î?i doresc cei doi prieteni, 
+?i cu NU în caz contrar.
