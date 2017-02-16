@@ -9,7 +9,16 @@ namespace Mellon
         [TestMethod]
         public void TestIfEven_OnEvenNumber()
         {
-            Assert.AreEqual(0,CheckIfEven(2));
+            Assert.IsTrue(CheckIfEven(2));
+        }
+        public bool CheckIfEven(int number) 
+        {
+            bool result = false;
+            if ((number % 2) == 0) 
+            {
+                result = true;   
+            }
+            return result;
         }
 
     }
